@@ -15,6 +15,11 @@
 		D222F4281E2DC1AF008C0390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D222F4261E2DC1AF008C0390 /* LaunchScreen.storyboard */; };
 		D222F4331E2DC1AF008C0390 /* SoundboardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222F4321E2DC1AF008C0390 /* SoundboardTests.swift */; };
 		D222F43E1E2DC1AF008C0390 /* SoundboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D222F43D1E2DC1AF008C0390 /* SoundboardUITests.swift */; };
+		D222F44D1E2DC90A008C0390 /* SHUTUP.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D222F44C1E2DC90A008C0390 /* SHUTUP.mp3 */; };
+		D222F44F1E2DC913008C0390 /* Klingon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D222F44E1E2DC913008C0390 /* Klingon.mp3 */; };
+		D222F4511E2DC91F008C0390 /* Dragon Scream.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D222F4501E2DC91F008C0390 /* Dragon Scream.mp3 */; };
+		D222F4531E2DC925008C0390 /* Dial-Up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D222F4521E2DC925008C0390 /* Dial-Up.mp3 */; };
+		D222F4561E2DC948008C0390 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D222F4551E2DC948008C0390 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		D222F4391E2DC1AF008C0390 /* SoundboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SoundboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D222F43D1E2DC1AF008C0390 /* SoundboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundboardUITests.swift; sourceTree = "<group>"; };
 		D222F43F1E2DC1AF008C0390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D222F44C1E2DC90A008C0390 /* SHUTUP.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = SHUTUP.mp3; path = ../../../Downloads/SHUTUP.mp3; sourceTree = "<group>"; };
+		D222F44E1E2DC913008C0390 /* Klingon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = Klingon.mp3; path = ../../../Downloads/Klingon.mp3; sourceTree = "<group>"; };
+		D222F4501E2DC91F008C0390 /* Dragon Scream.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dragon Scream.mp3"; path = "../../../Downloads/Dragon Scream.mp3"; sourceTree = "<group>"; };
+		D222F4521E2DC925008C0390 /* Dial-Up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = "Dial-Up.mp3"; path = "../../../Downloads/Dial-Up.mp3"; sourceTree = "<group>"; };
+		D222F4551E2DC948008C0390 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D222F4561E2DC948008C0390 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +94,7 @@
 				D222F4311E2DC1AF008C0390 /* SoundboardTests */,
 				D222F43C1E2DC1AF008C0390 /* SoundboardUITests */,
 				D222F4191E2DC1AF008C0390 /* Products */,
+				D222F4541E2DC948008C0390 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +111,7 @@
 		D222F41A1E2DC1AF008C0390 /* Soundboard */ = {
 			isa = PBXGroup;
 			children = (
+				D222F4571E2DD338008C0390 /* Images */,
 				D222F41B1E2DC1AF008C0390 /* AppDelegate.swift */,
 				D222F41D1E2DC1AF008C0390 /* FirstViewController.swift */,
 				D222F41F1E2DC1AF008C0390 /* SecondViewController.swift */,
@@ -106,6 +119,7 @@
 				D222F4241E2DC1AF008C0390 /* Assets.xcassets */,
 				D222F4261E2DC1AF008C0390 /* LaunchScreen.storyboard */,
 				D222F4291E2DC1AF008C0390 /* Info.plist */,
+				D222F44B1E2DC878008C0390 /* Sounds */,
 			);
 			path = Soundboard;
 			sourceTree = "<group>";
@@ -126,6 +140,32 @@
 				D222F43F1E2DC1AF008C0390 /* Info.plist */,
 			);
 			path = SoundboardUITests;
+			sourceTree = "<group>";
+		};
+		D222F44B1E2DC878008C0390 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				D222F44E1E2DC913008C0390 /* Klingon.mp3 */,
+				D222F44C1E2DC90A008C0390 /* SHUTUP.mp3 */,
+				D222F4501E2DC91F008C0390 /* Dragon Scream.mp3 */,
+				D222F4521E2DC925008C0390 /* Dial-Up.mp3 */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
+		D222F4541E2DC948008C0390 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D222F4551E2DC948008C0390 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D222F4571E2DD338008C0390 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,7 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D222F4281E2DC1AF008C0390 /* LaunchScreen.storyboard in Resources */,
+				D222F4531E2DC925008C0390 /* Dial-Up.mp3 in Resources */,
+				D222F44D1E2DC90A008C0390 /* SHUTUP.mp3 in Resources */,
 				D222F4251E2DC1AF008C0390 /* Assets.xcassets in Resources */,
+				D222F4511E2DC91F008C0390 /* Dragon Scream.mp3 in Resources */,
+				D222F44F1E2DC913008C0390 /* Klingon.mp3 in Resources */,
 				D222F4231E2DC1AF008C0390 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
